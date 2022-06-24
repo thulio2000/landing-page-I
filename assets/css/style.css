@@ -176,8 +176,20 @@ iframe {
     height: 90px;
     width: 6px;
     background-color: var(--secondary-color);
-    transform: rotate(40deg);
+    transform: rotate(-40deg);
     position: relative;
     top: -105px;
     left: 255px;
+}
+
+.about {
+    position: relative;
+    background: url("../images/jab-transformed.png") no-repeat top center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
 }
