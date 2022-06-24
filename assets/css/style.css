@@ -218,5 +218,5 @@ iframe {
 
 .stars-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1);
+    grid-template-columns: repeat(5, 1fr);
 }
