@@ -213,3 +213,10 @@ iframe {
     text-shadow: 2px 2px 2px #333;
     font-size: 1.8rem;
 }
+
+/*Gallery*/
+
+.stars-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1);
+}
