@@ -52,6 +52,14 @@
           
 
         <!--Night Mode Toggler-->
+        <div class="theme-switch">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="label">
+                <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+                <ion-icon name="moon-outline" class="moon"></ion-icon>
+                <div class="switcher"></div>
+            </label>
+        </div>
         
         <!--Bars-->
         
@@ -153,10 +161,31 @@
         
         <!--Email subscription-->
         
+        <section class="sub" id="sub">
+            <h3>Subscribe to our newsletter for updates</h3>
+            <form action="#">
+                <input type="email" name="email" id="email-sub" class="email-sub" required />
+                <input type="submit" value="subscribe" id="submit-btn" class="submit-btn" />
+            </form>
+        </section>
+
         <!--Social Icons-->
+
+        <section class="social">
+            <h3>Connect with us on Social Media</h3>
+            <div class="socicons">
+                <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+                <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+                <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+            </div>
+        </section>
         
         <!--Scroll to the top-->
-        
+        <footer>&copy;2022. All Rights Reserved</footer>
+
+        <i class="scroll-up" id="scroll-up">
+            <img src="assets/icons/icons8-upward-arrow.png" class="socicon" alt="up-arrow" />
+        </i>
         
         <!--Web Page Script-->
 
@@ -164,13 +193,16 @@
         
         <!--Ion icons cdn-->
         
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>        
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         
         <!--Simple Lightbox-->
         <script src="assets/js/simple-lightbox.min.js"></script>        
         <script>
             var lightbox = new SimpleLightbox(".stars-gallery a");
         </script>
+
+
         
     </body>    
 </html>
