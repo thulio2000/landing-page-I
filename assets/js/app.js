@@ -13,6 +13,21 @@ scrollUp.addEventListener("click", () => {
 
 //Hamburger Menu Functionality
 
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("ul");
+const navLink = document.querySelectorAll("#nav-link");
+
+function openMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggler("active");
+}
+
+navLink.forEach((n) => n.addEventListener("click", closeMenu) );
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
 // Theme Switcher/Toggler selection 
 
 // Close Menu on Nav Menu Clicks
