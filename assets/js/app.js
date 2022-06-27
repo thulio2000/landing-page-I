@@ -1,5 +1,9 @@
 // Hamburger Menu Selections
 
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("ul");
+const navLink = document.querySelectorAll("#nav-link");
+
 // Scroll-to-Top Selection
 const scrollUp = document.querySelector("#scroll-up")
 
@@ -12,25 +16,19 @@ scrollUp.addEventListener("click", () => {
 })
 
 //Hamburger Menu Functionality
-
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("ul");
-const navLink = document.querySelectorAll("#nav-link");
+hamburger.addEventListener("click", openMenu);
 
 function openMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggler("active");
 }
 
+// Close Menu on Nav Menu Clicks
 navLink.forEach((n) => n.addEventListener("click", closeMenu) );
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-
-// Theme Switcher/Toggler selection 
-
-// Close Menu on Nav Menu Clicks
 
 // Theme Switcher/Toggler Functionality
 
