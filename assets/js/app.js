@@ -32,8 +32,6 @@ function closeMenu() {
 
 // Close Menu on Nav Menu Clicks
 
-// Scroll to Top
-
 // Theme Switcher/Toggler Functionality
 
 const checkbox = document.querySelector("#checkbox");
