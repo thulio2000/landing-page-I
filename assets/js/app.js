@@ -7,11 +7,15 @@ const navLink = document.querySelectorAll("#nav-link");
 const scrollUp = document.querySelector("#scroll-up");
 
 //Hamburger Menu Functionality
+
 hamburger.addEventListener("click", openMenu);
+
+//Theme Switcher selection
+const checkbox = document.querySelector("#checkbox");
 
 function openMenu() {
     hamburger.classList.toggle("active");
-    navMenu.classList.toggler("active");
+    navMenu.classList.toggle("active");
 }
 
 // Close Menu on Nav Menu Clicks
@@ -31,7 +35,7 @@ scrollUp.addEventListener("click", () => {
 });
 
 // Theme Switcher/Toggler
-const checkbox = document.querySelector("#checkbox");
+
 
 checkbox.addEventListener("change", () => {
     //toggle website theme
